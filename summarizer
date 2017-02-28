@@ -1,0 +1,14 @@
+
+ReactiveDict = Usado para guardar estados temporários no lado do cliente. É como um objecto
+javascript normal com keys e values, mas com uma reactivity incorporada.
+
+Pode ser incluído com uma package do react => "meteor add reactive-dict". Depois incluí-se
+por exemplo no body template:
+
+  // import { ReactiveDict } from 'meteor/reactive-dict';
+
+  // Template.body.onCreate(function bodyOnCreated() {
+        this.state = new ReactiveDict();
+     });
+
+  // 
